@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpinnerRoundOutlined matches the snapshot 1`] = `
+<svg
+  fill="none"
+  style={
+    Object {
+      "color": "#fff",
+      "overflow": "visible",
+      "width": "100px",
+    }
+  }
+  viewBox="0 0 65 66"
+>
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r={2}
+    stroke="currentColor"
+    strokeWidth={4}
+    style={Object {}}
+  />
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r={14}
+    stroke="currentColor"
+    strokeWidth={1.5}
+    style={
+      Object {
+        "animation": "spinners-react-round-outlined-inner 14s ease-in-out infinite",
+      }
+    }
+  />
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r={28}
+    stroke="currentColor"
+    strokeWidth={1.5}
+    style={
+      Object {
+        "animation": "spinners-react-round-outlined-outer 14s ease-in-out infinite",
+      }
+    }
+  />
+</svg>
+`;
+
+exports[`SpinnerRoundOutlined matches the snapshot with default props 1`] = `
+<svg
+  fill="none"
+  style={
+    Object {
+      "color": "#38ad48",
+      "overflow": "visible",
+      "width": "50px",
+    }
+  }
+  viewBox="0 0 65 66"
+>
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r={2}
+    stroke="currentColor"
+    strokeWidth={4}
+    style={Object {}}
+  />
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r={14}
+    stroke="currentColor"
+    strokeWidth={3}
+    style={
+      Object {
+        "animation": "spinners-react-round-outlined-inner 1.4s ease-in-out infinite",
+      }
+    }
+  />
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r={28}
+    stroke="currentColor"
+    strokeWidth={3}
+    style={
+      Object {
+        "animation": "spinners-react-round-outlined-outer 1.4s ease-in-out infinite",
+      }
+    }
+  />
+</svg>
+`;

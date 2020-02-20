@@ -1,0 +1,30 @@
+@keyframes spinners-react-circular-split {
+  0% {
+    stroke-dashoffset: 1;
+    stroke-dasharray: 5, 170;
+  }
+  10% {
+    stroke-dashoffset: 13;
+    stroke-dasharray: 30, 145;
+  }
+  13% {
+    stroke-dashoffset: -11;
+    stroke-dasharray: 5, 145;
+  }
+  50% {
+    stroke-dasharray: 5, 0, 5, 165;
+    stroke-dashoffset: -82;
+  }
+  51% {
+    stroke-dasharray: 2, 0, 2, 139;
+    stroke-dashoffset: -85;
+  }
+  61% {
+    stroke-dasharray: 15, 0, 15, 165;
+    stroke-dashoffset: -72;
+  }
+  64% {
+    stroke-dasharray: 5, 20, 5, 145;
+    stroke-dashoffset: -72;
+  }
+}

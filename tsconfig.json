@@ -1,0 +1,16 @@
+{
+  "exclude" : ["src/**/*.spec.tsx"],
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "target": "es5",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "types": ["react", "jest"],
+    "esModuleInterop": true,
+    "lib": ["es2015", "dom"]
+  }
+}

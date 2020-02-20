@@ -1,0 +1,6 @@
+@keyframes spinners-react-round {
+  27%, 73% {
+    r: 2px;
+    stroke-width: 4;
+  }
+}

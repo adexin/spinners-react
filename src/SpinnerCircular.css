@@ -1,0 +1,8 @@
+@keyframes spinners-react-circular {
+  0% { stroke-dashoffset: 306; }
+  50% { stroke-dasharray: 40, 134; }
+  100% {
+    stroke-dasharray: 1, 174;
+    stroke-dashoffset: 132;
+  }
+}

@@ -1,0 +1,4 @@
+@keyframes spinners-react-circular-fixed {
+  0% { stroke-dashoffset: 325; }
+  100% { stroke-dashoffset: 151; }
+}

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpinnerInfinity matches the snapshot 1`] = `
+<svg
+  fill="none"
+  style={
+    Object {
+      "color": "#fff",
+      "overflow": "visible",
+      "width": "100px",
+    }
+  }
+  viewBox="0 0 131 55"
+>
+  <defs>
+    <path
+      d="M46.57 45.5138C36.346 55.4954 19.8919 55.4954 9.66794 45.5138C-0.55598 35.5321 -0.55598 19.4678 9.66794 9.48624C19.8919 -0.495412 36.346 -0.495412 46.57 9.48624L84.4303 45.5138C94.6543 55.4954 111.108 55.4954 121.332 45.5138C131.556 35.5321 131.556 19.4678 121.332 9.48624C111.108 -0.495412 94.6543 -0.495412 84.4303 9.48624L46.57 45.5138Z"
+      id="spinners-react-infinity-path"
+    />
+  </defs>
+  <use
+    stroke="#00000044"
+    strokeWidth={3.5}
+    xlinkHref="#spinners-react-infinity-path"
+  />
+  <use
+    fill="none"
+    stroke="currentColor"
+    strokeDasharray="1, 347"
+    strokeDashoffset="75"
+    strokeLinecap="round"
+    strokeWidth={3.5}
+    style={
+      Object {
+        "animation": "spinners-react-infinity 14s linear infinite",
+      }
+    }
+    xlinkHref="#spinners-react-infinity-path"
+  />
+</svg>
+`;
+
+exports[`SpinnerInfinity matches the snapshot with default props 1`] = `
+<svg
+  fill="none"
+  style={
+    Object {
+      "color": "#38ad48",
+      "overflow": "visible",
+      "width": "50px",
+    }
+  }
+  viewBox="0 0 131 55"
+>
+  <defs>
+    <path
+      d="M46.57 45.5138C36.346 55.4954 19.8919 55.4954 9.66794 45.5138C-0.55598 35.5321 -0.55598 19.4678 9.66794 9.48624C19.8919 -0.495412 36.346 -0.495412 46.57 9.48624L84.4303 45.5138C94.6543 55.4954 111.108 55.4954 121.332 45.5138C131.556 35.5321 131.556 19.4678 121.332 9.48624C111.108 -0.495412 94.6543 -0.495412 84.4303 9.48624L46.57 45.5138Z"
+      id="spinners-react-infinity-path"
+    />
+  </defs>
+  <use
+    stroke="#00000044"
+    strokeWidth={7}
+    xlinkHref="#spinners-react-infinity-path"
+  />
+  <use
+    fill="none"
+    stroke="currentColor"
+    strokeDasharray="1, 347"
+    strokeDashoffset="75"
+    strokeLinecap="round"
+    strokeWidth={7}
+    style={
+      Object {
+        "animation": "spinners-react-infinity 1.4s linear infinite",
+      }
+    }
+    xlinkHref="#spinners-react-infinity-path"
+  />
+</svg>
+`;

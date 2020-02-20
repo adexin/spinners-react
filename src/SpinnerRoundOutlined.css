@@ -1,0 +1,13 @@
+@keyframes spinners-react-round-outlined-outer {
+  35%, 65% {
+    r: 2px;
+    stroke-width: 4;
+  }
+}
+
+@keyframes spinners-react-round-outlined-inner {
+  35%, 65% {
+    r: 2px;
+    stroke-width: 4;
+  }
+}

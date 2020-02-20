@@ -1,0 +1,11 @@
+@keyframes spinners-react-dotted-center {
+  0%, 15%, 85%, 100% { transform: scale(0); }
+  40%, 50% { transform: scale(1); }
+  84% { transform: scale(0.45); }
+}
+@keyframes spinners-react-dotted-shrink {
+  50% {
+    cx: 33px;
+    cy: 33px;
+  }
+}

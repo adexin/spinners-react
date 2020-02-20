@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpinnerCircularFixed matches the snapshot 1`] = `
+<svg
+  fill="none"
+  style={
+    Object {
+      "color": "#fff",
+      "overflow": "visible",
+      "width": "100px",
+    }
+  }
+  viewBox="0 0 65 66"
+>
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r="28"
+    stroke="#00000044"
+    strokeWidth={2}
+  />
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r="28"
+    stroke="currentColor"
+    strokeDasharray="40, 134"
+    strokeDashoffset="325"
+    strokeLinecap="round"
+    strokeWidth={2}
+    style={
+      Object {
+        "animation": "spinners-react-circular-fixed 14s linear infinite",
+      }
+    }
+  />
+</svg>
+`;
+
+exports[`SpinnerCircularFixed matches the snapshot with default props 1`] = `
+<svg
+  fill="none"
+  style={
+    Object {
+      "color": "#38ad48",
+      "overflow": "visible",
+      "width": "50px",
+    }
+  }
+  viewBox="0 0 65 66"
+>
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r="28"
+    stroke="#00000044"
+    strokeWidth={4}
+  />
+  <circle
+    cx="33.0911"
+    cy="33.7809"
+    fill="none"
+    r="28"
+    stroke="currentColor"
+    strokeDasharray="40, 134"
+    strokeDashoffset="325"
+    strokeLinecap="round"
+    strokeWidth={4}
+    style={
+      Object {
+        "animation": "spinners-react-circular-fixed 1.4s linear infinite",
+      }
+    }
+  />
+</svg>
+`;
