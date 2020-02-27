@@ -1,7 +1,7 @@
 {
   "name": "spinners-react",
-  "version": "0.0.4",
-  "description": "Spinners collection to use with React",
+  "version": "0.0.5",
+  "description": "Lightweight SVG/CSS spinners for React",
   "sideEffects": [
     "src/*.css"
   ],
@@ -20,8 +20,21 @@
     "lib"
   ],
   "keywords": [
-    "React",
-    "Spinner"
+    "react-spinners",
+    "react-spinner",
+    "spinner-react",
+    "spinners",
+    "spinner",
+    "loaders",
+    "loader",
+    "loading",
+    "loading spinners",
+    "loading spinner",
+    "progress",
+    "react",
+    "reactjs",
+    "svg",
+    "css"
   ],
   "repository": {
     "type": "git",
