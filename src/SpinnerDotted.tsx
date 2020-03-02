@@ -56,7 +56,7 @@ export const SpinnerDotted = ({
           r={3 * (thickness / 100)}
           style={{
             transform: `translate(${c.x}px, ${c.y}px)`,
-            ...generateCircleStyle(i)
+            ...generateCircleStyle(i),
           }}
         />
       ))}
