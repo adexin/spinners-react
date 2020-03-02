@@ -10,53 +10,57 @@ exports[`SpinnerRoundFilled matches the snapshot 1`] = `
       "width": "100px",
     }
   }
-  viewBox="0 0 65 66"
+  viewBox="0 0 66 66"
 >
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={4}
     style={
       Object {
         "animation": "none",
         "opacity": 1,
+        "transformOrigin": "center",
       }
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={6.33}
     style={
       Object {
         "animation": "spinners-react-round-filled-inner 14s ease-in-out infinite",
         "opacity": 0.25,
+        "transformOrigin": "center",
       }
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={10.16}
     style={
       Object {
         "animation": "spinners-react-round-filled-center 14s ease-in-out infinite",
         "opacity": 0.25,
+        "transformOrigin": "center",
       }
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={13.75}
     style={
       Object {
         "animation": "spinners-react-round-filled-outer 14s ease-in-out infinite",
         "opacity": 0.25,
+        "transformOrigin": "center",
       }
     }
   />
@@ -73,53 +77,57 @@ exports[`SpinnerRoundFilled matches the snapshot with default props 1`] = `
       "width": "50px",
     }
   }
-  viewBox="0 0 65 66"
+  viewBox="0 0 66 66"
 >
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={4}
     style={
       Object {
         "animation": "none",
         "opacity": 1,
+        "transformOrigin": "center",
       }
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={12.66}
     style={
       Object {
         "animation": "spinners-react-round-filled-inner 1.4s ease-in-out infinite",
         "opacity": 0.25,
+        "transformOrigin": "center",
       }
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={20.32}
     style={
       Object {
         "animation": "spinners-react-round-filled-center 1.4s ease-in-out infinite",
         "opacity": 0.25,
+        "transformOrigin": "center",
       }
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={27.5}
     style={
       Object {
         "animation": "spinners-react-round-filled-outer 1.4s ease-in-out infinite",
         "opacity": 0.25,
+        "transformOrigin": "center",
       }
     }
   />

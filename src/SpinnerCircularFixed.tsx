@@ -29,18 +29,18 @@ export const SpinnerCircularFixed = ({
   if (!enabled) return null;
 
   return (
-    <svg fill="none" {...svgProps} style={svgStyle} viewBox="0 0 65 66">
+    <svg fill="none" {...svgProps} style={svgStyle} viewBox="0 0 66 66">
       <circle
-        cx="33.0911"
-        cy="33.7809"
+        cx="33"
+        cy="33"
         fill="none"
         r="28"
         stroke="rgba(0,0,0,0.44)"
         strokeWidth={strokeWidth}
       />
       <circle
-        cx="33.0911"
-        cy="33.7809"
+        cx="33"
+        cy="33"
         fill="none"
         r="28"
         stroke="currentColor"

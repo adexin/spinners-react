@@ -4,14 +4,14 @@ import { defaultProps, normalizeSize, SpinnerProps } from './helpers';
 import './SpinnerDotted.css';
 
 const coords = [
-  { x: 54.9545, y: 13.099 },
-  { x: 62.0454, y: 33.19 },
-  { x: 54.9545, y: 53.281 },
-  { x: 32.5, y: 62.7355 },
-  { x: 10.0454, y: 53.281 },
-  { x: 2.95455, y: 33.19 },
-  { x: 10.0454, y: 13.099 },
-  { x: 32.5, y: 3.64461 },
+  { x: 22, y: -20 },
+  { x: 29, y: 0 },
+  { x: 22, y: 20 },
+  { x: 0, y: 30 },
+  { x: -23, y: 20 },
+  { x: -30, y: 0 },
+  { x: -23, y: -20 },
+  { x: 0, y: -30 },
 ];
 
 export type SpinnerDottedProps = SpinnerProps;
@@ -46,20 +46,23 @@ export const SpinnerDotted = ({
   if (!enabled) return null;
 
   return (
-    <svg fill="none" viewBox="0 0 65 66" {...svgProps} style={svgStyle}>
+    <svg fill="none" viewBox="0 0 66 66" {...svgProps} style={svgStyle}>
       {coords.map((c, i) => (
         <circle
           key={`${c.x}-${c.y}`}
-          cx={c.x}
-          cy={c.y}
+          cx="33"
+          cy="33"
           fill="currentColor"
           r={3 * (thickness / 100)}
-          style={generateCircleStyle(i)}
+          style={{
+            transform: `translate(${c.x}px, ${c.y}px)`,
+            ...generateCircleStyle(i)
+          }}
         />
       ))}
       <circle
-        cx="33.0911"
-        cy="33.7809"
+        cx="33"
+        cy="33"
         fill="currentColor"
         r={6 * (thickness / 100)}
         style={centerStyle}

@@ -4,31 +4,32 @@ import { defaultProps, normalizeSize, SpinnerProps } from './helpers';
 import './SpinnerRomb.css';
 
 const coords = [
-  { x: 18.5, y: 33.1901 },
-  { x: 18.5, y: 48.1901 },
-  { x: 18.5, y: 63.1901 },
-  { x: 3.5, y: 48.1901 },
-  { x: 33.5, y: 48.1901 },
-  { x: 79.5, y: 48.1901 },
-  { x: 33.5, y: 33.1901 },
-  { x: 33.5, y: 18.1901 },
-  { x: 94.5, y: 48.1901 },
-  { x: 79.5, y: 33.1901 },
-  { x: 33.5, y: 63.1901 },
-  { x: 33.5, y: 78.1901 },
-  { x: 49.5, y: 18.1901 },
-  { x: 49.5, y: 3.19006 },
-  { x: 49.5, y: 48.1901 },
-  { x: 49.5, y: 33.1901 },
-  { x: 49.5, y: 63.1901 },
-  { x: 49.5, y: 78.1901 },
-  { x: 49.5, y: 93.1901 },
-  { x: 64.5, y: 18.1901 },
-  { x: 64.5, y: 48.1901 },
-  { x: 64.5, y: 33.1901 },
-  { x: 64.5, y: 63.1901 },
-  { x: 64.5, y: 78.1901 },
-  { x: 79.5, y: 63.1901 },
+  { x: 3, y: 48 },
+  { x: 18, y: 33 },
+  { x: 18, y: 48 },
+  { x: 18, y: 63 },
+  { x: 33, y: 48 },
+  // -------------
+  { x: 33, y: 18 },
+  { x: 33, y: 33 },
+  { x: 33, y: 63 },
+  { x: 33, y: 78 },
+  { x: 49, y: 3 },
+  { x: 49, y: 18 },
+  { x: 49, y: 33 },
+  { x: 49, y: 48 },
+  { x: 49, y: 63 },
+  { x: 49, y: 78 },
+  { x: 49, y: 93 },
+  { x: 64, y: 18 },
+  { x: 64, y: 33 },
+  { x: 64, y: 48 },
+  { x: 64, y: 63 },
+  { x: 64, y: 78 },
+  { x: 79, y: 33 },
+  { x: 79, y: 48 },
+  { x: 79, y: 63 },
+  { x: 94, y: 48 },
 ];
 
 export type SpinnerRombProps = SpinnerProps;
@@ -57,7 +58,7 @@ export const SpinnerRomb = ({
   if (!enabled) return null;
 
   return (
-    <svg fill="currentColor" {...svgProps} style={svgStyle} viewBox="0 0 97 96">
+    <svg fill="currentColor" {...svgProps} style={svgStyle} viewBox="0 0 96 96">
       {coords.map((c) => (
         <circle key={`${c.x}-${c.y}`} cx={c.x} cy={c.y} fill="rgba(0,0,0,0.44)" r={2.5 * (thickness / 100)} />
       ))}

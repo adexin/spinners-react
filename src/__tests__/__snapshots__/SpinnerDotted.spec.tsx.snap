@@ -10,99 +10,107 @@ exports[`SpinnerDotted matches the snapshot 1`] = `
       "width": "100px",
     }
   }
-  viewBox="0 0 65 66"
+  viewBox="0 0 66 66"
 >
   <circle
-    cx={54.9545}
-    cy={13.099}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={1.5}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 20s cubic-bezier(0, 0.9, 0, 0.9) 0s infinite",
+        "transform": "translate(22px, -20px)",
       }
     }
   />
   <circle
-    cx={62.0454}
-    cy={33.19}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={1.5}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 20s cubic-bezier(0, 0.9, 0, 0.9) 1s infinite",
+        "transform": "translate(29px, 0px)",
       }
     }
   />
   <circle
-    cx={54.9545}
-    cy={53.281}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={1.5}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 20s cubic-bezier(0, 0.9, 0, 0.9) 2s infinite",
+        "transform": "translate(22px, 20px)",
       }
     }
   />
   <circle
-    cx={32.5}
-    cy={62.7355}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={1.5}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 20s cubic-bezier(0, 0.9, 0, 0.9) 3s infinite",
+        "transform": "translate(0px, 30px)",
       }
     }
   />
   <circle
-    cx={10.0454}
-    cy={53.281}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={1.5}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 20s cubic-bezier(0, 0.9, 0, 0.9) 4s infinite",
+        "transform": "translate(-23px, 20px)",
       }
     }
   />
   <circle
-    cx={2.95455}
-    cy={33.19}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={1.5}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 20s cubic-bezier(0, 0.9, 0, 0.9) 5s infinite",
+        "transform": "translate(-30px, 0px)",
       }
     }
   />
   <circle
-    cx={10.0454}
-    cy={13.099}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={1.5}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 20s cubic-bezier(0, 0.9, 0, 0.9) 6s infinite",
+        "transform": "translate(-23px, -20px)",
       }
     }
   />
   <circle
-    cx={32.5}
-    cy={3.64461}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={1.5}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 20s cubic-bezier(0, 0.9, 0, 0.9) 7s infinite",
+        "transform": "translate(0px, -30px)",
       }
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
@@ -125,99 +133,107 @@ exports[`SpinnerDotted matches the snapshot with default props 1`] = `
       "width": "50px",
     }
   }
-  viewBox="0 0 65 66"
+  viewBox="0 0 66 66"
 >
   <circle
-    cx={54.9545}
-    cy={13.099}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 2s cubic-bezier(0, 0.9, 0, 0.9) 0s infinite",
+        "transform": "translate(22px, -20px)",
       }
     }
   />
   <circle
-    cx={62.0454}
-    cy={33.19}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 2s cubic-bezier(0, 0.9, 0, 0.9) 0.1s infinite",
+        "transform": "translate(29px, 0px)",
       }
     }
   />
   <circle
-    cx={54.9545}
-    cy={53.281}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 2s cubic-bezier(0, 0.9, 0, 0.9) 0.2s infinite",
+        "transform": "translate(22px, 20px)",
       }
     }
   />
   <circle
-    cx={32.5}
-    cy={62.7355}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 2s cubic-bezier(0, 0.9, 0, 0.9) 0.30000000000000004s infinite",
+        "transform": "translate(0px, 30px)",
       }
     }
   />
   <circle
-    cx={10.0454}
-    cy={53.281}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 2s cubic-bezier(0, 0.9, 0, 0.9) 0.4s infinite",
+        "transform": "translate(-23px, 20px)",
       }
     }
   />
   <circle
-    cx={2.95455}
-    cy={33.19}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 2s cubic-bezier(0, 0.9, 0, 0.9) 0.5s infinite",
+        "transform": "translate(-30px, 0px)",
       }
     }
   />
   <circle
-    cx={10.0454}
-    cy={13.099}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 2s cubic-bezier(0, 0.9, 0, 0.9) 0.6000000000000001s infinite",
+        "transform": "translate(-23px, -20px)",
       }
     }
   />
   <circle
-    cx={32.5}
-    cy={3.64461}
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={3}
     style={
       Object {
         "animation": "spinners-react-dotted-shrink 2s cubic-bezier(0, 0.9, 0, 0.9) 0.7000000000000001s infinite",
+        "transform": "translate(0px, -30px)",
       }
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="currentColor"
     r={6}
     style={

@@ -10,11 +10,11 @@ exports[`SpinnerRound matches the snapshot 1`] = `
       "width": "100px",
     }
   }
-  viewBox="0 0 65 66"
+  viewBox="0 0 66 66"
 >
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="none"
     r={28}
     stroke="currentColor"
@@ -22,6 +22,7 @@ exports[`SpinnerRound matches the snapshot 1`] = `
     style={
       Object {
         "animation": "spinners-react-round 14s ease-in-out infinite",
+        "transformOrigin": "center",
       }
     }
   />
@@ -38,11 +39,11 @@ exports[`SpinnerRound matches the snapshot with default props 1`] = `
       "width": "50px",
     }
   }
-  viewBox="0 0 65 66"
+  viewBox="0 0 66 66"
 >
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="none"
     r={28}
     stroke="currentColor"
@@ -50,6 +51,7 @@ exports[`SpinnerRound matches the snapshot with default props 1`] = `
     style={
       Object {
         "animation": "spinners-react-round 1.4s ease-in-out infinite",
+        "transformOrigin": "center",
       }
     }
   />

@@ -10,11 +10,11 @@ exports[`SpinnerRoundOutlined matches the snapshot 1`] = `
       "width": "100px",
     }
   }
-  viewBox="0 0 65 66"
+  viewBox="0 0 66 66"
 >
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="none"
     r={2}
     stroke="currentColor"
@@ -22,8 +22,8 @@ exports[`SpinnerRoundOutlined matches the snapshot 1`] = `
     style={Object {}}
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="none"
     r={14}
     stroke="currentColor"
@@ -35,8 +35,8 @@ exports[`SpinnerRoundOutlined matches the snapshot 1`] = `
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="none"
     r={28}
     stroke="currentColor"
@@ -60,11 +60,11 @@ exports[`SpinnerRoundOutlined matches the snapshot with default props 1`] = `
       "width": "50px",
     }
   }
-  viewBox="0 0 65 66"
+  viewBox="0 0 66 66"
 >
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="none"
     r={2}
     stroke="currentColor"
@@ -72,8 +72,8 @@ exports[`SpinnerRoundOutlined matches the snapshot with default props 1`] = `
     style={Object {}}
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="none"
     r={14}
     stroke="currentColor"
@@ -85,8 +85,8 @@ exports[`SpinnerRoundOutlined matches the snapshot with default props 1`] = `
     }
   />
   <circle
-    cx="33.0911"
-    cy="33.7809"
+    cx="33"
+    cy="33"
     fill="none"
     r={28}
     stroke="currentColor"

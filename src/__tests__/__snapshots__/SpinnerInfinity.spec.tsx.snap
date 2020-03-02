@@ -19,7 +19,7 @@ exports[`SpinnerInfinity matches the snapshot 1`] = `
     />
   </defs>
   <use
-    stroke="#00000044"
+    stroke="rgba(0,0,0,0.44)"
     strokeWidth={3.5}
     xlinkHref="#spinners-react-infinity-path"
   />
@@ -59,7 +59,7 @@ exports[`SpinnerInfinity matches the snapshot with default props 1`] = `
     />
   </defs>
   <use
-    stroke="#00000044"
+    stroke="rgba(0,0,0,0.44)"
     strokeWidth={7}
     xlinkHref="#spinners-react-infinity-path"
   />

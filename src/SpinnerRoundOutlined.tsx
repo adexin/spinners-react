@@ -42,12 +42,12 @@ export const SpinnerRoundOutlined = ({
   if (!enabled) return null;
 
   return (
-    <svg fill="none" {...svgProps} style={svgStyle} viewBox="0 0 65 66">
+    <svg fill="none" {...svgProps} style={svgStyle} viewBox="0 0 66 66">
       {animations.map((animation) => (
         <circle
           key={animation.name || 'still'}
-          cx="33.0911"
-          cy="33.7809"
+          cx="33"
+          cy="33"
           fill="none"
           r={animation.r}
           stroke="currentColor"

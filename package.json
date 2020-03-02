@@ -1,6 +1,6 @@
 {
   "name": "spinners-react",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Lightweight SVG/CSS spinners for React",
   "sideEffects": [
     "src/*.css"
@@ -15,7 +15,8 @@
     "build": "rollup -c --configProd",
     "start": "rollup -c -w",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ./",
-    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "jest": "jest --coverage --coverageReporters=text-lcov"
   },
   "files": [
     "lib"

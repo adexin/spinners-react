@@ -1,11 +1,11 @@
 @keyframes spinners-react-round-filled-outer {
-  40%, 60% { r: 4px; }
+  40%, 60% { transform: scale(0); }
 }
 
 @keyframes spinners-react-round-filled-center {
-  30%, 70% { r: 4px; }
+  30%, 70% { transform: scale(0); }
 }
 
 @keyframes spinners-react-round-filled-inner {
-  20%, 80% { r: 4px; }
+  20%, 80% { transform: scale(0); }
 }

@@ -5,7 +5,6 @@
 }
 @keyframes spinners-react-dotted-shrink {
   50% {
-    cx: 33px;
-    cy: 33px;
+    transform: translate(0, 0);
   }
 }
