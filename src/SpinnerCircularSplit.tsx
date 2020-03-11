@@ -49,7 +49,7 @@ export const SpinnerCircularSplit = ({
         strokeLinecap="round"
         strokeWidth={strokeWidth}
         style={circleStyle}
-        transform="rotate(-90 33.0911 33.7809)"
+        transform="rotate(-90 33 33)"
       />
     </svg>
   );
