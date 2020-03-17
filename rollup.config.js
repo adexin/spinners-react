@@ -1,8 +1,8 @@
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
 import glob from 'glob';
-import commonjs from 'rollup-plugin-commonjs';
 import del from 'rollup-plugin-delete';
 import copy from 'rollup-plugin-copy-glob';
-import resolve from 'rollup-plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
 import typescript from 'rollup-plugin-ts';

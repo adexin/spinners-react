@@ -35,7 +35,7 @@ exports[`SpinnerCircularSplit matches the snapshot 1`] = `
         "animation": "spinners-react-circular-split 14s linear infinite",
       }
     }
-    transform="rotate(-90 33.0911 33.7809)"
+    transform="rotate(-90 33 33)"
   />
 </svg>
 `;
@@ -75,7 +75,7 @@ exports[`SpinnerCircularSplit matches the snapshot with default props 1`] = `
         "animation": "spinners-react-circular-split 1.4s linear infinite",
       }
     }
-    transform="rotate(-90 33.0911 33.7809)"
+    transform="rotate(-90 33 33)"
   />
 </svg>
 `;
