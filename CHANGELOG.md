@@ -4,12 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.3]
+
 ### Added
 - Changelog.
+- Editorconfig.
 
 ### Changed
 - Updated dev dependencies.
 - Updated test shapshots.
+- Updated package.json metadata.
 
 ## [1.0.2]
 
@@ -38,9 +42,10 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Initial release.
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.2...HEAD
+[unreleased]: https://github.com/adexin/spinners-react/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/adexin/spinners-react/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/adexin/spinners-react/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/adexin/spinners-react/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/adexin/spinners-react/compare/v0.0.5...v1.0.0
 [0.0.5]: https://github.com/adexin/spinners-react/compare/v0.0.4...v0.0.5
-[0.0.4]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.4
+[0.0.4]: https://github.com/adexin/spinners-react/releases/tag/v0.0.4

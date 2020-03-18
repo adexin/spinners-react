@@ -21,6 +21,10 @@
   "files": [
     "lib"
   ],
+  "directories": {
+    "lib": "./lib",
+    "test": "./src/__tests__"
+  },
   "keywords": [
     "react-spinners",
     "react-spinner",
@@ -42,8 +46,18 @@
     "type": "git",
     "url": "https://github.com/adexin/spinners-react.git"
   },
-  "author": "Adexin",
+  "bugs": {
+    "url": "https://github.com/adexin/spinners-react/issues",
+    "email": "info@adexin.com"
+  },
+  "author": {
+    "name": "Adexin",
+    "email": "info@adexin.com",
+    "url": "https://adexin.com"
+  },
+  "contributors": [],
   "license": "MIT",
+  "homepage": "demo.adexin.com/spinners/",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",

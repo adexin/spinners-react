@@ -1,5 +1,5 @@
 module.exports = {
-extends: ['airbnb-typescript'],
+  extends: ['airbnb-typescript'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {

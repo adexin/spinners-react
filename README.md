@@ -1,5 +1,5 @@
 # Spinners React
-[![npm](https://img.shields.io/npm/v/spinners-react.svg)](http://npm.im/spinners-react) [![License](https://img.shields.io/github/license/adexin/spinners-react.svg)](https://github.com/adexin/spinners-react/blob/master/LICENSE) [![Build Status](https://img.shields.io/travis/adexin/spinners-react/master.svg)](https://travis-ci.org/adexin/spinners-react) [![Coverage Status](https://coveralls.io/repos/github/adexin/spinners-react/badge.svg?branch=master)](https://coveralls.io/github/adexin/spinners-react?branch=master) [![gzip size](http://img.badgesize.io/https://unpkg.com/spinners-react/lib/umd/index.min.js?compression=gzip&label=gzip)](https://unpkg.com/spinners-react/lib/umd/index.min.js)
+[![npm](https://img.shields.io/npm/v/spinners-react.svg)](http://npm.im/spinners-react) [![License](https://img.shields.io/github/license/adexin/spinners-react.svg)](https://github.com/adexin/spinners-react/blob/master/LICENSE.md) [![Build Status](https://img.shields.io/travis/adexin/spinners-react/master.svg)](https://travis-ci.org/adexin/spinners-react) [![Coverage Status](https://coveralls.io/repos/github/adexin/spinners-react/badge.svg?branch=master)](https://coveralls.io/github/adexin/spinners-react?branch=master) [![gzip size](http://img.badgesize.io/https://unpkg.com/spinners-react/lib/umd/index.min.js?compression=gzip&label=gzip)](https://unpkg.com/spinners-react/lib/umd/index.min.js)
 
 
 9 awesome typescript-aware lightweight spinners built as react.js components.
@@ -61,7 +61,7 @@ While the library works with SSR, the spinner's animation CSS will be attached t
 /* to load animation for a specific spinner */
 @import "~spinners-react/lib/SpinnerCircular.css";
 
-/* to load animations for all spinner at once */
+/* to load animations for all spinners at once */
 @import "~spinners-react/lib/index.css";
 ```
 
