@@ -1,37 +1,27 @@
 import React, { CSSProperties } from 'react';
-import { defaultProps, normalizeSize, SpinnerProps } from './helpers';
+import { defaultProps, SpinnerProps } from './helpers';
+import { SpinnersProps, withSharedProps } from './withSharedProps';
 
 import './SpinnerRound.css';
 
-export type SpinnerRoundProps = SpinnerProps;
+export type SpinnerRoundProps = SpinnersProps & SpinnerProps;
 
-export const SpinnerRound = ({
-  color,
-  enabled,
-  size,
+const Component = ({
   speed,
   still,
   thickness,
-  style,
   ...svgProps
-}: SpinnerRoundProps) => {
+}: SpinnerProps) => {
   const strokeWidth = 3 * (thickness / 100);
-  const svgStyle: CSSProperties = {
-    color,
-    overflow: 'visible',
-    width: normalizeSize(size),
-    ...style,
-  };
   const circleStyle: CSSProperties = {
     animation: `spinners-react-round ${140 / speed}s ease-in-out infinite`,
     transformOrigin: 'center',
   };
 
   if (still) circleStyle.animation = 'none';
-  if (!enabled) return null;
 
   return (
-    <svg fill="none" {...svgProps} style={svgStyle} viewBox="0 0 66 66">
+    <svg fill="none" {...svgProps} viewBox="0 0 66 66">
       <circle
         cx="33"
         cy="33"
@@ -44,4 +34,7 @@ export const SpinnerRound = ({
     </svg>
   );
 };
-SpinnerRound.defaultProps = defaultProps;
+
+Component.defaultProps = defaultProps;
+
+export const SpinnerRound = withSharedProps(Component);

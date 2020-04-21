@@ -1,41 +1,31 @@
 import React, { CSSProperties } from 'react';
-import { defaultProps, normalizeSize, SpinnerProps } from './helpers';
+import { secondaryColorDefaultProps, SecondaryColorSpinnerProps } from './helpers';
+import { SpinnersProps, withSharedProps } from './withSharedProps';
 
 import './SpinnerCircularSplit.css';
 
-export type SpinnerCircularSplitProps = SpinnerProps;
+export type SpinnerCircularSplitProps = SpinnersProps & SecondaryColorSpinnerProps;
 
-export const SpinnerCircularSplit = ({
-  color,
-  enabled,
-  size,
+const Component = ({
+  secondaryColor,
   speed,
   still,
   thickness,
-  style,
   ...svgProps
-}: SpinnerCircularSplitProps) => {
+}: SecondaryColorSpinnerProps) => {
   const strokeWidth = 4 * (thickness / 100);
-  const svgStyle: CSSProperties = {
-    color,
-    overflow: 'visible',
-    width: normalizeSize(size),
-    ...style,
-  };
   const circleStyle: CSSProperties = !still
     ? { animation: `spinners-react-circular-split ${140 / speed}s linear infinite` }
     : {};
 
-  if (!enabled) return null;
-
   return (
-    <svg fill="none" {...svgProps} style={svgStyle} viewBox="0 0 66 66">
+    <svg fill="none" {...svgProps} viewBox="0 0 66 66">
       <circle
         cx="33"
         cy="33"
         fill="none"
         r="28"
-        stroke="rgba(0,0,0,0.44)"
+        stroke={secondaryColor}
         strokeWidth={strokeWidth}
       />
       <circle
@@ -54,4 +44,7 @@ export const SpinnerCircularSplit = ({
     </svg>
   );
 };
-SpinnerCircularSplit.defaultProps = defaultProps;
+
+Component.defaultProps = secondaryColorDefaultProps;
+
+export const SpinnerCircularSplit = withSharedProps(Component);

@@ -11,11 +11,11 @@ describe('SpinnerRoundOutlined', () => {
       strokeWidth: 4,
     },
     {
-      name: 'spinners-react-round-outlined-inner',
+      name: 'spinners-react-round-outlined',
       r: 14,
     },
     {
-      name: 'spinners-react-round-outlined-outer',
+      name: 'spinners-react-round-outlined',
       r: 28,
     },
   ];

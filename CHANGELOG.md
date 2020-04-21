@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+- SecondaryColor property for bicolor spinners.
+
+### Changed
+- Renamed SpinnerRomb to SpinnerDiamond.
+- Refactored with HOCs to reduce duplicated code.
+
 ## [1.0.3]
 
 ### Added

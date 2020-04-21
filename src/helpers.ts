@@ -1,25 +1,16 @@
-import { CSSProperties } from 'react';
-
-export type SpinnerProps = React.HTMLAttributes<SVGElement> & {
-  color: CSSProperties['color'],
-  enabled: boolean,
-  speed: number,
-  still: boolean,
-  thickness: number,
-  size: CSSProperties['width'],
-  style: CSSProperties,
-};
+import { CSSProperties, HTMLAttributes } from 'react';
 
 export const defaultProps = {
-  color: '#38ad48',
-  enabled: true,
-  still: false,
-  size: 50,
   speed: 100,
+  still: false,
   thickness: 100,
-  style: {},
 };
 
-export const normalizeSize = (size: CSSProperties['width']) => (parseFloat(size.toString()).toString() === size.toString()
-  ? `${size}px`
-  : size.toString());
+export const secondaryColorDefaultProps = {
+  ...defaultProps,
+  secondaryColor: 'rgba(0,0,0,0.44)' as CSSProperties['color'],
+};
+
+export type SpinnerProps = HTMLAttributes<SVGElement> & Partial<typeof defaultProps>;
+
+export type SecondaryColorSpinnerProps = SpinnerProps & Partial<typeof secondaryColorDefaultProps>;

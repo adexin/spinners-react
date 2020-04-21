@@ -6,4 +6,4 @@ export * from './SpinnerDotted';
 export * from './SpinnerRound';
 export * from './SpinnerRoundOutlined';
 export * from './SpinnerRoundFilled';
-export * from './SpinnerRomb';
+export * from './SpinnerDiamond';

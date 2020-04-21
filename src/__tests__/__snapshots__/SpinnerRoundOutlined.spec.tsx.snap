@@ -30,7 +30,7 @@ exports[`SpinnerRoundOutlined matches the snapshot 1`] = `
     strokeWidth={1.5}
     style={
       Object {
-        "animation": "spinners-react-round-outlined-inner 14s ease-in-out infinite",
+        "animation": "spinners-react-round-outlined 14s ease-in-out infinite",
       }
     }
   />
@@ -43,7 +43,7 @@ exports[`SpinnerRoundOutlined matches the snapshot 1`] = `
     strokeWidth={1.5}
     style={
       Object {
-        "animation": "spinners-react-round-outlined-outer 14s ease-in-out infinite",
+        "animation": "spinners-react-round-outlined 14s ease-in-out infinite",
       }
     }
   />
@@ -80,7 +80,7 @@ exports[`SpinnerRoundOutlined matches the snapshot with default props 1`] = `
     strokeWidth={3}
     style={
       Object {
-        "animation": "spinners-react-round-outlined-inner 1.4s ease-in-out infinite",
+        "animation": "spinners-react-round-outlined 1.4s ease-in-out infinite",
       }
     }
   />
@@ -93,7 +93,7 @@ exports[`SpinnerRoundOutlined matches the snapshot with default props 1`] = `
     strokeWidth={3}
     style={
       Object {
-        "animation": "spinners-react-round-outlined-outer 1.4s ease-in-out infinite",
+        "animation": "spinners-react-round-outlined 1.4s ease-in-out infinite",
       }
     }
   />

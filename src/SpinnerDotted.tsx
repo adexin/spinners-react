@@ -1,5 +1,6 @@
 import React, { CSSProperties } from 'react';
-import { defaultProps, normalizeSize, SpinnerProps } from './helpers';
+import { defaultProps, SpinnerProps } from './helpers';
+import { SpinnersProps, withSharedProps } from './withSharedProps';
 
 import './SpinnerDotted.css';
 
@@ -14,25 +15,15 @@ const coords = [
   { x: 0, y: -30 },
 ];
 
-export type SpinnerDottedProps = SpinnerProps;
+export type SpinnerDottedProps = SpinnersProps & SpinnerProps;
 
-export const SpinnerDotted = ({
-  color,
-  enabled,
-  size,
+export const Component = ({
   speed,
   still,
   thickness,
-  style,
   ...svgProps
-}: SpinnerDottedProps) => {
+}: SpinnerProps) => {
   const duration = 200 / speed;
-  const svgStyle: CSSProperties = {
-    color,
-    overflow: 'visible',
-    width: normalizeSize(size),
-    ...style,
-  };
   const generateCircleStyle = (i: number): CSSProperties => (!still
     ? { animation: `spinners-react-dotted-shrink ${duration}s cubic-bezier(0, 0.9, 0, 0.9) ${(duration / 20) * i}s infinite` }
     : {});
@@ -43,10 +34,8 @@ export const SpinnerDotted = ({
     }
     : { display: 'none' };
 
-  if (!enabled) return null;
-
   return (
-    <svg fill="none" viewBox="0 0 66 66" {...svgProps} style={svgStyle}>
+    <svg fill="none" viewBox="0 0 66 66" {...svgProps}>
       {coords.map((c, i) => (
         <circle
           key={`${c.x}-${c.y}`}
@@ -70,4 +59,7 @@ export const SpinnerDotted = ({
     </svg>
   );
 };
-SpinnerDotted.defaultProps = defaultProps;
+
+Component.defaultProps = defaultProps;
+
+export const SpinnerDotted = withSharedProps(Component);

@@ -5,6 +5,7 @@ module.exports = {
   rules: {
     'react/jsx-props-no-spreading': ['error', {
       html: 'ignore',
+      exceptions: ['Component'],
     }],
     'react/jsx-sort-props': ['error'],
     'import/order': ['error'],

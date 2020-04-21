@@ -27,7 +27,7 @@ import { SpinnerCircular } from 'spinners-react';
 <SpinnerCircular />
 ```
 
-### Hide spinner 
+### Hide spinner
 ```
 <SpinnerCircular enabled={false} />
 ```
@@ -37,8 +37,8 @@ import { SpinnerCircular } from 'spinners-react';
 | Component | Example | Component | Example | Component | Example |
 |-----------|---------|-----------|---------|-----------|---------|
 |`SpinnerCircular`|<img width="70" src="https://i.imgur.com/o89jDAP.gif" />|`SpinnerCircularFixed`| <img width="70" src="https://i.imgur.com/tTAGJCm.gif" />|`SpinnerCircularSplit`| <img width="70" src="https://i.imgur.com/bnmc9Ww.gif" />|
-|`SpinnerRound`   |<img width="70" src="https://i.imgur.com/ankNNb4.gif" />|`SpinnerRoundOutlined`|<img width="70" src="https://i.imgur.com/EGAQ1zI.gif" />|`SpinnerRoundFilled`  |<img width="70" src="https://i.imgur.com/izh0T8z.gif" />|
-|`SpinnerDotted`  |<img width="70" src="https://i.imgur.com/PRsEM0Y.gif" />|`SpinnerInfinity`     |<img width="70" src="https://i.imgur.com/gdvE3yw.gif" />|`SpinnerRomb`         |<img width="70" src="https://i.imgur.com/P2lUfRy.gif" />|
+|`SpinnerRound`   |<img width="70" src="https://i.imgur.com/ankNNb4.gif" />|`SpinnerRoundOutlined`|<img width="70" src="https://i.imgur.com/EGAQ1zI.gif" /> |`SpinnerRoundFilled`  |<img width="70" src="https://i.imgur.com/izh0T8z.gif" />|
+|`SpinnerDotted`  |<img width="70" src="https://i.imgur.com/PRsEM0Y.gif" />|`SpinnerInfinity`     |<img width="70" src="https://i.imgur.com/gdvE3yw.gif" /> |`SpinnerDiamond`      |<img width="70" src="https://i.imgur.com/P2lUfRy.gif" />|
 
 ## Properties
 The following optional properties are available. All extra props will be passed to the component's root SVG element.
@@ -70,7 +70,7 @@ The library is thin and do not rely on any style library / runtime to be used. T
 If you're using ES6 modules and a bundler that supports tree-shaking you can safely use named imports:
 ```
 import { SpinnerCircular } from 'spinners-react';
-``` 
+```
 It that's not the case you're able to use path imports to avoid pulling in unused spinners:
 ```
 // ESM
