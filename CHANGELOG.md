@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.4]
+
 ### Added
 - SecondaryColor property for bicolor spinners.
 

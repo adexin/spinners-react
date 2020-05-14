@@ -67,97 +67,97 @@ exports[`SpinnerDiamond matches the snapshot 1`] = `
     r={1.25}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={3}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={18}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={33}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={48}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={63}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={78}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={93}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={18}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={33}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={48}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={63}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={78}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={79}
+    cx={78}
     cy={33}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={79}
+    cx={78}
     cy={48}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={79}
+    cx={78}
     cy={63}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
   />
   <circle
-    cx={94}
+    cx={93}
     cy={48}
     fill="rgba(0,0,0,0.44)"
     r={1.25}
@@ -265,97 +265,97 @@ exports[`SpinnerDiamond matches the snapshot with default props 1`] = `
     r={2.5}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={3}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={18}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={33}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={48}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={63}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={78}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={49}
+    cx={48}
     cy={93}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={18}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={33}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={48}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={63}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={64}
+    cx={63}
     cy={78}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={79}
+    cx={78}
     cy={33}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={79}
+    cx={78}
     cy={48}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={79}
+    cx={78}
     cy={63}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
   />
   <circle
-    cx={94}
+    cx={93}
     cy={48}
     fill="rgba(0,0,0,0.44)"
     r={2.5}
