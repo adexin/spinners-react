@@ -43,15 +43,16 @@ import { SpinnerCircular } from 'spinners-react';
 ## Properties
 The following optional properties are available. All extra props will be passed to the component's root SVG element.
 
-| Property | Default value | Type           | Description |
-|----------|---------------|----------------|-------------|
-|size      |`50`           |number or string|Set the size as number of pixels or any valid CSS string (e.g. `size="100%"`).|
-|thickness |`100`          |number          |Set lines width as a percentage of default thickness.|
-|сolor     |`#38ad48`      |string          |Set the color. Can be set to any valid CSS string (hex, rgb, rgba).|
-|speed     |`100`          |number          |Set the animation speed as a percentage of default speed.|
-|enabled   |`true`         |boolean         |Show/Hide the spinner.|
-|still     |`false`        |boolean         |Disable/Enable spinner animation.|
-|style     |undefined      |object         |Pass CSS styles to the root SVG element|
+| Property     | Default value      | Type           | Description |
+|--------------|--------------------|----------------|-------------|
+|size          |`50`                |number or string|Set the size as number of pixels or any valid CSS string (e.g. `size="100%"`).|
+|thickness     |`100`               |number          |Set lines width as a percentage of default thickness.|
+|сolor         |`'#38ad48'`         |string          |Set the color. Can be set to any valid CSS string (hex, rgb, rgba).|
+|secondaryColor|`'rgba(0,0,0,0.44)'`|string          |Set the secondary color. Can be set to any valid CSS string (hex, rgb, rgba).|
+|speed         |`100`               |number          |Set the animation speed as a percentage of default speed.|
+|enabled       |`true`              |boolean         |Show/Hide the spinner.|
+|still         |`false`             |boolean         |Disable/Enable spinner animation.|
+|style         |undefined           |object          |Pass CSS styles to the root SVG element|
 
 ## Server Side Rendering
 While the library works with SSR, the spinner's animation CSS will be attached to the head only on the ```hydrate``` phase, which means the spinners will start animating only after the page is fully loaded. To work around this, include the needed css in your bundle.css manually:
