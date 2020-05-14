@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Renamed SpinnerRomb to SpinnerDiamond.
+- Fixed SpinnerDiamond dots position.
 - Refactored with HOCs to reduce duplicated code.
 
 ## [1.0.3]
