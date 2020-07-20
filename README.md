@@ -120,6 +120,10 @@ import { SpinnerCircular } from 'spinners-react/lib/umd/SpinnerCircular';
 
 Let us know if you [found a bug](https://github.com/adexin/spinners-react/issues)!
 
+## Spinners for other frameworks
+
+- [spinners-angular](https://github.com/adexin/spinners-angular)
+
 ## Support and Contact
 
 Have a quick question or need some help? Please do not hesitate to contact us via email at info@adexin.com.
