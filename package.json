@@ -1,6 +1,6 @@
 {
   "name": "spinners-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Lightweight SVG/CSS spinners for React",
   "sideEffects": [
     "src/*.css"
