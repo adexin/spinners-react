@@ -1,5 +1,5 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import { create, ReactTestRendererJSON } from 'react-test-renderer';
 
 import { SpinnerDotted } from '../SpinnerDotted';
 
@@ -41,7 +41,7 @@ describe('SpinnerDotted', () => {
     const component = create(
       <SpinnerDotted color={color} size={size} speed={speed} thickness={thickness} />,
     );
-    const { props: { style } } = component.toJSON();
+    const { props: { style } } = component.toJSON() as ReactTestRendererJSON;
     const circles = component.root.findAllByType('circle');
     const last = circles.length - 1;
     const animationDuration = 200 / speed;
@@ -56,7 +56,7 @@ describe('SpinnerDotted', () => {
   it('passes svg props overriding styles', () => {
     const className = 'test-class';
     const component = create(<SpinnerDotted className={className} color="green" style={{ color }} />);
-    const { props } = component.toJSON();
+    const { props } = component.toJSON() as ReactTestRendererJSON;
 
     expect(props.className).toBe(className);
     expect(props.style.color).toBe(color);

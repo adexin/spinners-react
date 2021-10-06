@@ -4,13 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-### Changed
-- Updated README.
 
 ## [1.0.5]
 
 ### Changed
 - Updated dev and peer dependencies.
+- Updated README.
 
 ## [1.0.4]
 

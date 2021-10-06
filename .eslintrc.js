@@ -1,7 +1,10 @@
 module.exports = {
-  extends: ['airbnb-typescript'],
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  root: true,
+  extends: ['airbnb', 'airbnb-typescript'],
+  parserOptions: {
+    project: './tsconfig.eslint.json',
+    tsconfigRootDir: __dirname,
+  },
   rules: {
     'react/jsx-props-no-spreading': ['error', {
       html: 'ignore',
@@ -17,4 +20,4 @@ module.exports = {
       },
     },
   },
-}
+};

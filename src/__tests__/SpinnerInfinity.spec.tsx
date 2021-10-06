@@ -1,5 +1,5 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import { create, ReactTestRendererJSON } from 'react-test-renderer';
 
 import { SpinnerInfinity } from '../SpinnerInfinity';
 
@@ -38,7 +38,7 @@ describe('SpinnerInfinity', () => {
     const component = create(
       <SpinnerInfinity color={color} size={size} speed={speed} thickness={thickness} />,
     );
-    const { props: { style } } = component.toJSON();
+    const { props: { style } } = component.toJSON() as ReactTestRendererJSON;
     const uses = component.root.findAllByType('use');
     const strokeWidth = 7 * (thickness / 100);
 
@@ -51,7 +51,7 @@ describe('SpinnerInfinity', () => {
   it('passes svg props overriding styles', () => {
     const className = 'test-class';
     const component = create(<SpinnerInfinity className={className} color="green" style={{ color }} />);
-    const { props } = component.toJSON();
+    const { props } = component.toJSON() as ReactTestRendererJSON;
 
     expect(props.className).toBe(className);
     expect(props.style.color).toBe(color);

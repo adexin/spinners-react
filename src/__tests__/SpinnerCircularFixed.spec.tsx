@@ -1,5 +1,5 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import { create, ReactTestRendererJSON } from 'react-test-renderer';
 
 import { SpinnerCircularFixed } from '../SpinnerCircularFixed';
 
@@ -38,7 +38,7 @@ describe('SpinnerCircularFixed', () => {
     const component = create(
       <SpinnerCircularFixed color={color} size={size} speed={speed} thickness={thickness} />,
     );
-    const { props: { style } } = component.toJSON();
+    const { props: { style } } = component.toJSON() as ReactTestRendererJSON;
     const circles = component.root.findAllByType('circle');
 
     expect(style.width).toBe(size);
@@ -49,7 +49,7 @@ describe('SpinnerCircularFixed', () => {
   it('passes svg props overriding styles', () => {
     const className = 'test-class';
     const component = create(<SpinnerCircularFixed className={className} color="green" style={{ color }} />);
-    const { props } = component.toJSON();
+    const { props } = component.toJSON() as ReactTestRendererJSON;
 
     expect(props.className).toBe(className);
     expect(props.style.color).toBe(color);

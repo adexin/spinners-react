@@ -8,7 +8,6 @@
     "moduleResolution": "node",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
     "types": ["react", "jest"],
     "esModuleInterop": true,
     "lib": ["es2015", "dom"]

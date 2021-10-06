@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="http://adexin.github.io/spinners">
-	  <img src="https://i.imgur.com/xa7eWLW.gif" />
+    <img src="https://i.imgur.com/xa7eWLW.gif" />
   </a>
 </p>
 
@@ -77,9 +77,9 @@ It that's not the case you're able to use path imports to avoid pulling in unuse
 // ESM
 import { SpinnerCircular } from 'spinners-react/lib/esm/SpinnerCircular';
 // or CJS
-import { SpinnerCircular } from 'spinners-react/lib/cjs/SpinnerCircular';
+const { SpinnerCircular } = require('spinners-react/lib/cjs/SpinnerCircular');
 // or UMD
-import { SpinnerCircular } from 'spinners-react/lib/umd/SpinnerCircular';
+const { SpinnerCircular } = require('spinners-react/lib/cjs/SpinnerCircular');
 
 ```
 
