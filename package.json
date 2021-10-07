@@ -9,9 +9,10 @@
   "module": "lib/esm/index.js",
   "types": "lib/esm/index.d.ts",
   "scripts": {
-    "prepare": "npm run lint && npm run build",
-    "prebuild": "rimraf lib/*",
-    "prestart": "rimraf lib/*",
+    "prepublishOnly": "npm run lint && npm run jest && npm run build",
+    "clean": "rimraf lib/*",
+    "prebuild": "yarn clean",
+    "prestart": "yarn clean",
     "build": "node --max-old-space-size=4096 node_modules/rollup/dist/bin/rollup -c --configProd",
     "start": "rollup -c -w",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",

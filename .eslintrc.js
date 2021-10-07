@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  ignorePatterns: ['coverage/'],
   extends: ['airbnb', 'airbnb-typescript'],
   parserOptions: {
     project: './tsconfig.eslint.json',
