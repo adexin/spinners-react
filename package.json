@@ -15,8 +15,8 @@
     "build": "node --max-old-space-size=4096 node_modules/rollup/dist/bin/rollup -c --configProd",
     "start": "rollup -c -w",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
-    "jest": "jest --coverage --coverageReporters=text-lcov",
-    "test": "npm run jest | coveralls"
+    "jest": "jest --coverage",
+    "test": "npm run jest -- --coverageReporters=text-lcov | coveralls"
   },
   "files": [
     "lib"

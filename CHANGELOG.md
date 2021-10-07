@@ -3,9 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-### Changed
-- Move from travis.org to travis.com
 
+## [1.0.6]
+
+### Changed
+- Move CI from travis.org to travis.com
+- Show human readable coverage when running tests locally
 
 ## [1.0.5]
 
