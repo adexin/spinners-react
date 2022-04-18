@@ -3,19 +3,26 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-[unreleased]: https://github.com/adexin/spinners-react/compare/v1.0.6...HEAD
+[unreleased]: https://github.com/adexin/spinners-react/compare/v1.0.7...HEAD
+
+## [1.0.7]
+[1.0.7]: https://github.com/adexin/spinners-react/compare/v1.0.6...v1.0.7
+
+### Added
+- Package components source files for sourcemaps to work properly.
 
 ### Changed
-- Prevent library building on package install
-- Ignore coverage reports by linter
-- Added latest versions diff links to changelog
+- Prevent library building on package install.
+- Ignore coverage reports by linter.
+- Added latest versions diff links to changelog.
+- Updated react dependencies.
 
 ## [1.0.6]
 [1.0.6]: https://github.com/adexin/spinners-react/compare/v1.0.5...v1.0.6
 
 ### Changed
-- Migrated CI from travis.org to travis.com
-- Show human readable coverage when running tests locally
+- Migrated CI from travis.org to travis.com.
+- Show human readable coverage when running tests locally.
 
 ## [1.0.5]
 [1.0.5]: https://github.com/adexin/spinners-react/compare/v1.0.4...v1.0.5
