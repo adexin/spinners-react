@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 [unreleased]: https://github.com/adexin/spinners-react/compare/v1.0.7...HEAD
 
+### Changed
+- Updated dev dependencies.
+
 ## [1.0.7]
 [1.0.7]: https://github.com/adexin/spinners-react/compare/v1.0.6...v1.0.7
 
