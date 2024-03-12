@@ -17,7 +17,11 @@ export type SpinnersProps = Partial<typeof defaultProps>;
 export const withSharedProps = <P extends SpinnersProps>(Component: ComponentType<P>) => {
   const Wrapper = (props: P) => {
     const {
-      color, enabled, size, style, ...otherProps
+      color = defaultProps.color,
+      enabled = defaultProps.enabled,
+      size = defaultProps.size,
+      style = defaultProps.style,
+      ...otherProps
     } = props;
     const componentProps = {
       ...otherProps,
@@ -33,8 +37,6 @@ export const withSharedProps = <P extends SpinnersProps>(Component: ComponentTyp
 
     return <Component {...componentProps as P} />;
   };
-
-  Wrapper.defaultProps = defaultProps;
 
   return Wrapper;
 };

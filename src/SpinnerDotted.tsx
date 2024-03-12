@@ -18,9 +18,9 @@ const coords = [
 export type SpinnerDottedProps = SpinnersProps & SpinnerProps;
 
 export const Component = ({
-  speed,
-  still,
-  thickness,
+  speed = defaultProps.speed,
+  still = defaultProps.still,
+  thickness = defaultProps.thickness,
   ...svgProps
 }: SpinnerProps) => {
   const duration = 200 / speed;
@@ -59,7 +59,5 @@ export const Component = ({
     </svg>
   );
 };
-
-Component.defaultProps = defaultProps;
 
 export const SpinnerDotted = withSharedProps(Component);

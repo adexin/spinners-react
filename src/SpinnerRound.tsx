@@ -7,9 +7,9 @@ import './SpinnerRound.css';
 export type SpinnerRoundProps = SpinnersProps & SpinnerProps;
 
 const Component = ({
-  speed,
-  still,
-  thickness,
+  speed = defaultProps.speed,
+  still = defaultProps.still,
+  thickness = defaultProps.thickness,
   ...svgProps
 }: SpinnerProps) => {
   const strokeWidth = 3 * (thickness / 100);
@@ -34,7 +34,5 @@ const Component = ({
     </svg>
   );
 };
-
-Component.defaultProps = defaultProps;
 
 export const SpinnerRound = withSharedProps(Component);
