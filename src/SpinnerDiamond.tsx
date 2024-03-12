@@ -36,10 +36,10 @@ const coords = [
 export type SpinnerDiamondProps = SpinnersProps & SecondaryColorSpinnerProps;
 
 const Component = ({
-  secondaryColor,
-  speed,
-  still,
-  thickness,
+  secondaryColor = secondaryColorDefaultProps.secondaryColor,
+  speed = secondaryColorDefaultProps.speed,
+  still = secondaryColorDefaultProps.still,
+  thickness = secondaryColorDefaultProps.thickness,
   ...svgProps
 }: SecondaryColorSpinnerProps) => {
   const diamondStyle: CSSProperties = {
@@ -61,8 +61,6 @@ const Component = ({
     </svg>
   );
 };
-
-Component.defaultProps = secondaryColorDefaultProps;
 
 export const SpinnerRomb = withSharedProps(Component);
 export const SpinnerDiamond = withSharedProps(Component);

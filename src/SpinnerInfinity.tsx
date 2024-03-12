@@ -7,10 +7,10 @@ import './SpinnerInfinity.css';
 export type SpinnerInfinityProps = SpinnersProps & SecondaryColorSpinnerProps;
 
 const Component = ({
-  secondaryColor,
-  speed,
-  still,
-  thickness,
+  secondaryColor = secondaryColorDefaultProps.secondaryColor,
+  speed = secondaryColorDefaultProps.speed,
+  still = secondaryColorDefaultProps.still,
+  thickness = secondaryColorDefaultProps.thickness,
   ...svgProps
 }: SecondaryColorSpinnerProps) => {
   const strokeWidth = 7 * (thickness / 100);
@@ -40,7 +40,5 @@ const Component = ({
     </svg>
   );
 };
-
-Component.defaultProps = secondaryColorDefaultProps;
 
 export const SpinnerInfinity = withSharedProps(Component);
