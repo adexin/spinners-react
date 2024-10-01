@@ -7,10 +7,10 @@ import './SpinnerCircular.css';
 export type SpinnerCircularProps = SpinnersProps & SecondaryColorSpinnerProps;
 
 const Component = ({
-  secondaryColor,
-  speed,
-  still,
-  thickness,
+  secondaryColor = secondaryColorDefaultProps.secondaryColor,
+  speed = secondaryColorDefaultProps.speed,
+  still = secondaryColorDefaultProps.still,
+  thickness = secondaryColorDefaultProps.thickness,
   ...svgProps
 }: SecondaryColorSpinnerProps) => {
   const strokeWidth = 4 * (thickness / 100);
@@ -43,7 +43,5 @@ const Component = ({
     </svg>
   );
 };
-
-Component.defaultProps = secondaryColorDefaultProps;
 
 export const SpinnerCircular = withSharedProps(Component);

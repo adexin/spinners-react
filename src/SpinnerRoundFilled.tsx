@@ -23,9 +23,9 @@ const animations = [
 export type SpinnerRoundFilledProps = SpinnersProps & SpinnerProps;
 
 const Component = ({
-  speed,
-  still,
-  thickness,
+  speed = defaultProps.speed,
+  still = defaultProps.still,
+  thickness = defaultProps.thickness,
   ...svgProps
 }: SpinnerProps) => (
   <svg fill="none" {...svgProps} viewBox="0 0 66 66">
@@ -47,7 +47,5 @@ const Component = ({
     ))}
   </svg>
 );
-
-Component.defaultProps = defaultProps;
 
 export const SpinnerRoundFilled = withSharedProps(Component);
