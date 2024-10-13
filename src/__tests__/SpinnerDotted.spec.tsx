@@ -1,5 +1,5 @@
+import { render } from '@testing-library/react';
 import React from 'react';
-import { create, ReactTestRendererJSON } from 'react-test-renderer';
 
 import { SpinnerDotted } from '../SpinnerDotted';
 
@@ -7,58 +7,67 @@ describe('SpinnerDotted', () => {
   const color = 'red';
 
   it('matches the snapshot', () => {
-    const component = create(<SpinnerDotted color="#fff" size={100} speed={10} thickness={50} />);
+    const { container } = render(
+      <SpinnerDotted color="#fff" size={100} speed={10} thickness={50} />,
+    );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('matches the snapshot with default props', () => {
-    const component = create(<SpinnerDotted />);
+    const { container } = render(<SpinnerDotted />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('renders null if disabled', () => {
-    const component = create(<SpinnerDotted enabled={false} />);
+    const { container } = render(<SpinnerDotted enabled={false} />);
 
-    expect(component.toJSON()).toBe(null);
+    expect(container.firstChild).toBe(null);
   });
 
   it('renders still if specified', () => {
-    const component = create(<SpinnerDotted still />);
-    const circles = component.root.findAllByType('circle');
+    const { container } = render(<SpinnerDotted still />);
+    const circles = container.querySelectorAll('circle');
     const last = circles.length - 1;
 
-    expect(circles[0].props.style.animation).toBeUndefined();
-    expect(circles[last].props.style.animation).toBeUndefined();
-    expect(circles[last].props.style.display).toBe('none');
+    expect(circles[0].style.animation).toBe('');
+    expect(circles[last].style.animation).toBe('');
+    expect(circles[last]).toHaveStyle({ display: 'none' });
   });
 
   it('passes props to styles', () => {
     const size = '20%';
     const thickness = 40;
     const speed = 50;
-    const component = create(
-      <SpinnerDotted color={color} size={size} speed={speed} thickness={thickness} />,
+    const { container } = render(
+      <SpinnerDotted
+        color={color}
+        size={size}
+        speed={speed}
+        thickness={thickness}
+      />,
     );
-    const { props: { style } } = component.toJSON() as ReactTestRendererJSON;
-    const circles = component.root.findAllByType('circle');
+    const circles = container.querySelectorAll('circle');
     const last = circles.length - 1;
-    const animationDuration = 200 / speed;
+    const animationDuration = `${200 / speed}`;
 
-    expect(style.width).toBe(size);
-    expect(circles[0].props.r).toBeCloseTo(3 * (thickness / 100));
-    expect(circles[0].props.style.animation.includes(animationDuration)).toBe(true);
-    expect(circles[last].props.r).toBeCloseTo(6 * (thickness / 100));
-    expect(circles[last].props.style.animation.includes(animationDuration)).toBe(true);
+    expect(container.firstChild).toHaveStyle({ width: size });
+    expect(circles[0]).toHaveAttribute('r', `${3 * (thickness / 100)}`);
+    expect(circles[0].style.animation.includes(animationDuration)).toBe(true);
+    expect(circles[last]).toHaveAttribute('r', `${6 * (thickness / 100)}`);
+    expect(circles[last].style.animation.includes(animationDuration)).toBe(
+      true,
+    );
   });
 
   it('passes svg props overriding styles', () => {
     const className = 'test-class';
-    const component = create(<SpinnerDotted className={className} color="green" style={{ color }} />);
-    const { props } = component.toJSON() as ReactTestRendererJSON;
+    const { container } = render(
+      <SpinnerDotted className={className} color="green" style={{ color }} />,
+    );
 
-    expect(props.className).toBe(className);
-    expect(props.style.color).toBe(color);
+    expect(container.firstChild).toHaveClass(className);
+    expect(container.firstChild).toHaveStyle({ color });
   });
 });

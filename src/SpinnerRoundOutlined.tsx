@@ -20,12 +20,12 @@ const animations = [
 
 export type SpinnerRoundOutlinedProps = SpinnersProps & SpinnerProps;
 
-const Component = ({
+function Component({
   speed = defaultProps.speed,
   still = defaultProps.still,
   thickness = defaultProps.thickness,
   ...svgProps
-}: SpinnerProps) => {
+}: SpinnerProps) {
   const strokeWidth = 3 * (thickness / 100);
 
   return (
@@ -46,6 +46,6 @@ const Component = ({
       ))}
     </svg>
   );
-};
+}
 
 export const SpinnerRoundOutlined = withSharedProps(Component);

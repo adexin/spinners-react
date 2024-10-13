@@ -1,5 +1,5 @@
+import { render } from '@testing-library/react';
 import React from 'react';
-import { create, ReactTestRendererJSON } from 'react-test-renderer';
 
 import { SpinnerRoundFilled } from '../SpinnerRoundFilled';
 
@@ -22,30 +22,32 @@ describe('SpinnerRoundFilled', () => {
   ];
 
   it('matches the snapshot', () => {
-    const component = create(<SpinnerRoundFilled color="#fff" size={100} speed={10} thickness={50} />);
+    const { container } = render(
+      <SpinnerRoundFilled color="#fff" size={100} speed={10} thickness={50} />,
+    );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('matches the snapshot with default props', () => {
-    const component = create(<SpinnerRoundFilled />);
+    const { container } = render(<SpinnerRoundFilled />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('renders null if disabled', () => {
-    const component = create(<SpinnerRoundFilled enabled={false} />);
+    const { container } = render(<SpinnerRoundFilled enabled={false} />);
 
-    expect(component.toJSON()).toBe(null);
+    expect(container.firstChild).toBe(null);
   });
 
   it('renders still if specified', () => {
-    const component = create(<SpinnerRoundFilled still />);
-    const circles = component.root.findAllByType('circle');
+    const { container } = render(<SpinnerRoundFilled still />);
+    const circles = container.querySelectorAll('circle');
 
     circles.forEach((circle, index) => {
-      expect(circle.props.style.animation).toBe('none');
-      expect(circle.props.r).toBe(animations[index].r);
+      expect(circle.style.animation).toBe('none');
+      expect(circle).toHaveAttribute('r', `${animations[index].r}`);
     });
   });
 
@@ -53,28 +55,44 @@ describe('SpinnerRoundFilled', () => {
     const size = '20%';
     const thickness = 40;
     const speed = 50;
-    const component = create(
-      <SpinnerRoundFilled color={color} size={size} speed={speed} thickness={thickness} />,
+    const { container } = render(
+      <SpinnerRoundFilled
+        color={color}
+        size={size}
+        speed={speed}
+        thickness={thickness}
+      />,
     );
-    const { props: { style } } = component.toJSON() as ReactTestRendererJSON;
-    const circles = component.root.findAllByType('circle');
+    const circles = container.querySelectorAll('circle');
 
-    expect(style.width).toBe(size);
+    expect(container.firstChild).toHaveStyle({ width: size });
     circles.forEach((circle, index) => {
-      expect(circle.props.style.animation.includes(animations[index].name || 'none')).toBe(true);
-      if (index) expect(circle.props.style.animation.includes(140 / speed)).toBe(true);
-      expect(circle.props.r).toBeCloseTo(
-        index ? animations[index].r * (thickness / 100) : animations[index].r,
+      expect(
+        circle.style.animation.includes(animations[index].name || 'none'),
+      ).toBe(true);
+      if (index) {
+        expect(circle.style.animation.includes(`${140 / speed}`)).toBe(true);
+      }
+      expect(circle).toHaveAttribute(
+        'r',
+        `${
+          index ? animations[index].r * (thickness / 100) : animations[index].r
+        }`,
       );
     });
   });
 
   it('passes svg props overriding styles', () => {
     const className = 'test-class';
-    const component = create(<SpinnerRoundFilled className={className} color="green" style={{ color }} />);
-    const { props } = component.toJSON() as ReactTestRendererJSON;
+    const { container } = render(
+      <SpinnerRoundFilled
+        className={className}
+        color="green"
+        style={{ color }}
+      />,
+    );
 
-    expect(props.className).toBe(className);
-    expect(props.style.color).toBe(color);
+    expect(container.firstChild).toHaveClass(className);
+    expect(container.firstChild).toHaveStyle({ color });
   });
 });

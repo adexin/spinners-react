@@ -17,12 +17,12 @@ const coords = [
 
 export type SpinnerDottedProps = SpinnersProps & SpinnerProps;
 
-export const Component = ({
+export function Component({
   speed = defaultProps.speed,
   still = defaultProps.still,
   thickness = defaultProps.thickness,
   ...svgProps
-}: SpinnerProps) => {
+}: SpinnerProps) {
   const duration = 200 / speed;
   const generateCircleStyle = (i: number): CSSProperties => (!still
     ? { animation: `spinners-react-dotted-shrink ${duration}s cubic-bezier(0, 0.9, 0, 0.9) ${(duration / 20) * i}s infinite` }
@@ -58,6 +58,6 @@ export const Component = ({
       />
     </svg>
   );
-};
+}
 
 export const SpinnerDotted = withSharedProps(Component);

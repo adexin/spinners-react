@@ -22,30 +22,32 @@ const animations = [
 
 export type SpinnerRoundFilledProps = SpinnersProps & SpinnerProps;
 
-const Component = ({
+function Component({
   speed = defaultProps.speed,
   still = defaultProps.still,
   thickness = defaultProps.thickness,
   ...svgProps
-}: SpinnerProps) => (
-  <svg fill="none" {...svgProps} viewBox="0 0 66 66">
-    {animations.map((animation) => (
-      <circle
-        key={animation.name || 'still'}
-        cx="33"
-        cy="33"
-        fill="currentColor"
-        r={animation.r * (animation.name ? (thickness / 100) : 1)}
-        style={{
-          opacity: animation.name ? 0.25 : 1,
-          transformOrigin: 'center',
-          animation: (!animation.name || still)
-            ? 'none'
-            : `${animation.name} ${140 / speed}s ease-in-out infinite`,
-        }}
-      />
-    ))}
-  </svg>
-);
+}: SpinnerProps) {
+  return (
+    <svg fill="none" {...svgProps} viewBox="0 0 66 66">
+      {animations.map((animation) => (
+        <circle
+          key={animation.name || 'still'}
+          cx="33"
+          cy="33"
+          fill="currentColor"
+          r={animation.r * (animation.name ? (thickness / 100) : 1)}
+          style={{
+            opacity: animation.name ? 0.25 : 1,
+            transformOrigin: 'center',
+            animation: (!animation.name || still)
+              ? 'none'
+              : `${animation.name} ${140 / speed}s ease-in-out infinite`,
+          }}
+        />
+      ))}
+    </svg>
+  );
+}
 
 export const SpinnerRoundFilled = withSharedProps(Component);

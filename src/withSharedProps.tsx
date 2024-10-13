@@ -1,4 +1,5 @@
 import React, { ComponentType, CSSProperties } from 'react';
+import { SpinnerProps } from './helpers';
 
 const defaultProps = {
   color: '#38ad48' as CSSProperties['color'],
@@ -6,16 +7,16 @@ const defaultProps = {
   size: 50 as CSSProperties['width'],
   style: {} as CSSProperties,
 };
-const normalizeSize = (size: CSSProperties['width']) => (
-  parseFloat(size.toString()).toString() === size.toString()
-    ? `${size}px`
-    : size.toString()
-);
+const normalizeSize = (size: CSSProperties['width']) => (parseFloat(size.toString()).toString() === size.toString()
+  ? `${size}px`
+  : size.toString());
 
 export type SpinnersProps = Partial<typeof defaultProps>;
 
-export const withSharedProps = <P extends SpinnersProps>(Component: ComponentType<P>) => {
-  const Wrapper = (props: P) => {
+export const withSharedProps = <P extends SpinnerProps>(
+  Component: ComponentType<P>,
+) => {
+  function Wrapper(props: SpinnersProps & P) {
     const {
       color = defaultProps.color,
       enabled = defaultProps.enabled,
@@ -35,8 +36,8 @@ export const withSharedProps = <P extends SpinnersProps>(Component: ComponentTyp
 
     if (!enabled) return null;
 
-    return <Component {...componentProps as P} />;
-  };
+    return <Component {...(componentProps as P)} />;
+  }
 
   return Wrapper;
 };

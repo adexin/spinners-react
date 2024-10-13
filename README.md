@@ -72,7 +72,7 @@ If you're using ES6 modules and a bundler that supports tree-shaking you can saf
 ```
 import { SpinnerCircular } from 'spinners-react';
 ```
-It that's not the case you're able to use path imports to avoid pulling in unused spinners:
+If that's not the case you're able to use path imports to avoid pulling in unused spinners:
 ```
 // ESM
 import { SpinnerCircular } from 'spinners-react/lib/esm/SpinnerCircular';

@@ -6,13 +6,13 @@ import './SpinnerCircularSplit.css';
 
 export type SpinnerCircularSplitProps = SpinnersProps & SecondaryColorSpinnerProps;
 
-const Component = ({
+function Component({
   secondaryColor = secondaryColorDefaultProps.secondaryColor,
   speed = secondaryColorDefaultProps.speed,
   still = secondaryColorDefaultProps.still,
   thickness = secondaryColorDefaultProps.thickness,
   ...svgProps
-}: SecondaryColorSpinnerProps) => {
+}: SecondaryColorSpinnerProps) {
   const strokeWidth = 4 * (thickness / 100);
   const circleStyle: CSSProperties = !still
     ? { animation: `spinners-react-circular-split ${140 / speed}s linear infinite` }
@@ -43,6 +43,6 @@ const Component = ({
       />
     </svg>
   );
-};
+}
 
 export const SpinnerCircularSplit = withSharedProps(Component);
