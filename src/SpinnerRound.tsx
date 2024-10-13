@@ -6,12 +6,12 @@ import './SpinnerRound.css';
 
 export type SpinnerRoundProps = SpinnersProps & SpinnerProps;
 
-const Component = ({
+function Component({
   speed = defaultProps.speed,
   still = defaultProps.still,
   thickness = defaultProps.thickness,
   ...svgProps
-}: SpinnerProps) => {
+}: SpinnerProps) {
   const strokeWidth = 3 * (thickness / 100);
   const circleStyle: CSSProperties = {
     animation: `spinners-react-round ${140 / speed}s ease-in-out infinite`,
@@ -33,6 +33,6 @@ const Component = ({
       />
     </svg>
   );
-};
+}
 
 export const SpinnerRound = withSharedProps(Component);

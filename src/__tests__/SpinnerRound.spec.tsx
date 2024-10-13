@@ -1,5 +1,5 @@
+import { render } from '@testing-library/react';
 import React from 'react';
-import { create, ReactTestRendererJSON } from 'react-test-renderer';
 
 import { SpinnerRound } from '../SpinnerRound';
 
@@ -7,51 +7,58 @@ describe('SpinnerRound', () => {
   const color = 'red';
 
   it('matches the snapshot', () => {
-    const component = create(<SpinnerRound color="#fff" size={100} speed={10} thickness={50} />);
+    const { container } = render(
+      <SpinnerRound color="#fff" size={100} speed={10} thickness={50} />,
+    );
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('matches the snapshot with default props', () => {
-    const component = create(<SpinnerRound />);
+    const { container } = render(<SpinnerRound />);
 
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('renders null if disabled', () => {
-    const component = create(<SpinnerRound enabled={false} />);
+    const { container } = render(<SpinnerRound enabled={false} />);
 
-    expect(component.toJSON()).toBe(null);
+    expect(container.firstChild).toBe(null);
   });
 
   it('renders still if specified', () => {
-    const component = create(<SpinnerRound still />);
-    const circle = component.root.findByType('circle');
+    const { container } = render(<SpinnerRound still />);
+    const circle = container.querySelector('circle');
 
-    expect(circle.props.style.animation).toBe('none');
+    expect(circle?.style.animation).toBe('none');
   });
 
   it('passes props to styles', () => {
     const size = '20%';
     const thickness = 40;
     const speed = 50;
-    const component = create(
-      <SpinnerRound color={color} size={size} speed={speed} thickness={thickness} />,
+    const { container } = render(
+      <SpinnerRound
+        color={color}
+        size={size}
+        speed={speed}
+        thickness={thickness}
+      />,
     );
-    const { props: { style } } = component.toJSON() as ReactTestRendererJSON;
-    const circle = component.root.findByType('circle');
+    const circle = container.querySelector('circle');
 
-    expect(style.width).toBe(size);
-    expect(circle.props.strokeWidth).toBeCloseTo(3 * (thickness / 100));
-    expect(circle.props.style.animation.includes(140 / speed)).toBe(true);
+    expect(container.firstChild).toHaveStyle({ width: size });
+    expect(circle).toHaveAttribute('stroke-width', `${3 * (thickness / 100)}`);
+    expect(circle?.style.animation.includes(`${140 / speed}`)).toBe(true);
   });
 
   it('passes svg props overriding styles', () => {
     const className = 'test-class';
-    const component = create(<SpinnerRound className={className} color="green" style={{ color }} />);
-    const { props } = component.toJSON() as ReactTestRendererJSON;
+    const { container } = render(
+      <SpinnerRound className={className} color="green" style={{ color }} />,
+    );
 
-    expect(props.className).toBe(className);
-    expect(props.style.color).toBe(color);
+    expect(container.firstChild).toHaveClass(className);
+    expect(container.firstChild).toHaveStyle({ color });
   });
 });

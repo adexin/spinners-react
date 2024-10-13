@@ -1,59 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SpinnerRound matches the snapshot 1`] = `
-<svg
-  fill="none"
-  style={
-    Object {
-      "color": "#fff",
-      "overflow": "visible",
-      "width": "100px",
-    }
-  }
-  viewBox="0 0 66 66"
->
-  <circle
-    cx="33"
-    cy="33"
+<div>
+  <svg
     fill="none"
-    r={28}
-    stroke="currentColor"
-    strokeWidth={1.5}
-    style={
-      Object {
-        "animation": "spinners-react-round 14s ease-in-out infinite",
-        "transformOrigin": "center",
-      }
-    }
-  />
-</svg>
+    style="color: rgb(255, 255, 255); overflow: visible; width: 100px;"
+    viewBox="0 0 66 66"
+  >
+    <circle
+      cx="33"
+      cy="33"
+      fill="none"
+      r="28"
+      stroke="currentColor"
+      stroke-width="1.5"
+      style="animation: spinners-react-round 14s ease-in-out infinite; transform-origin: center;"
+    />
+  </svg>
+</div>
 `;
 
 exports[`SpinnerRound matches the snapshot with default props 1`] = `
-<svg
-  fill="none"
-  style={
-    Object {
-      "color": "#38ad48",
-      "overflow": "visible",
-      "width": "50px",
-    }
-  }
-  viewBox="0 0 66 66"
->
-  <circle
-    cx="33"
-    cy="33"
+<div>
+  <svg
     fill="none"
-    r={28}
-    stroke="currentColor"
-    strokeWidth={3}
-    style={
-      Object {
-        "animation": "spinners-react-round 1.4s ease-in-out infinite",
-        "transformOrigin": "center",
-      }
-    }
-  />
-</svg>
+    style="color: rgb(56, 173, 72); overflow: visible; width: 50px;"
+    viewBox="0 0 66 66"
+  >
+    <circle
+      cx="33"
+      cy="33"
+      fill="none"
+      r="28"
+      stroke="currentColor"
+      stroke-width="3"
+      style="animation: spinners-react-round 1.4s ease-in-out infinite; transform-origin: center;"
+    />
+  </svg>
+</div>
 `;

@@ -1,5 +1,5 @@
 # Spinners React
-[![npm](https://img.shields.io/npm/v/spinners-react.svg)](http://npm.im/spinners-react) [![License](https://img.shields.io/github/license/adexin/spinners-react.svg)](https://github.com/adexin/spinners-react/blob/master/LICENSE.md) [![Build Status](https://img.shields.io/travis/com/adexin/spinners-react/master.svg)](https://travis-ci.com/github/adexin/spinners-react) [![Coverage Status](https://coveralls.io/repos/github/adexin/spinners-react/badge.svg?branch=master)](https://coveralls.io/github/adexin/spinners-react?branch=master) [![gzip size](http://img.badgesize.io/https://unpkg.com/spinners-react/lib/umd/index.min.js?compression=gzip&label=gzip)](https://unpkg.com/spinners-react/lib/umd/index.min.js)
+[![npm](https://img.shields.io/npm/v/spinners-react.svg)](http://npm.im/spinners-react) [![License](https://img.shields.io/github/license/adexin/spinners-react.svg)](https://github.com/adexin/spinners-react/blob/master/LICENSE.md) [![Build Status](https://img.shields.io/travis/com/adexin/spinners-react/master.svg)](https://travis-ci.com/github/adexin/spinners-react) [![Coverage Status](https://coveralls.io/repos/github/adexin/spinners-react/badge.svg?branch=master)](https://coveralls.io/github/adexin/spinners-react?branch=master) [![gzip size](https://img.badgesize.io/https://unpkg.com/spinners-react/lib/umd/index.min.js?compression=gzip&label=gzip)](https://unpkg.com/spinners-react/lib/umd/index.min.js)
 
 
 9 awesome typescript-aware lightweight spinners built as react.js components.
@@ -72,7 +72,7 @@ If you're using ES6 modules and a bundler that supports tree-shaking you can saf
 ```
 import { SpinnerCircular } from 'spinners-react';
 ```
-It that's not the case you're able to use path imports to avoid pulling in unused spinners:
+If that's not the case you're able to use path imports to avoid pulling in unused spinners:
 ```
 // ESM
 import { SpinnerCircular } from 'spinners-react/lib/esm/SpinnerCircular';

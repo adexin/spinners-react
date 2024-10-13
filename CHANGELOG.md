@@ -3,9 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-[unreleased]: https://github.com/adexin/spinners-react/compare/v1.0.7...HEAD
+[unreleased]: https://github.com/adexin/spinners-react/compare/v1.0.10...HEAD
+
+## [1.0.10]
+[1.0.10]: https://github.com/adexin/spinners-react/compare/v1.0.7...v1.0.10
 
 ### Changed
+- Removed deprecated defaultProps warning.
 - Updated dev dependencies.
 
 ## [1.0.7]

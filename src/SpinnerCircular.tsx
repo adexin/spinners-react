@@ -1,18 +1,21 @@
 import React, { CSSProperties } from 'react';
-import { secondaryColorDefaultProps, SecondaryColorSpinnerProps } from './helpers';
+import {
+  secondaryColorDefaultProps,
+  SecondaryColorSpinnerProps,
+} from './helpers';
 import { SpinnersProps, withSharedProps } from './withSharedProps';
 
 import './SpinnerCircular.css';
 
 export type SpinnerCircularProps = SpinnersProps & SecondaryColorSpinnerProps;
 
-const Component = ({
+function Component({
   secondaryColor = secondaryColorDefaultProps.secondaryColor,
   speed = secondaryColorDefaultProps.speed,
   still = secondaryColorDefaultProps.still,
   thickness = secondaryColorDefaultProps.thickness,
   ...svgProps
-}: SecondaryColorSpinnerProps) => {
+}: SecondaryColorSpinnerProps) {
   const strokeWidth = 4 * (thickness / 100);
   const circleStyle: CSSProperties = !still
     ? { animation: `spinners-react-circular ${140 / speed}s linear infinite` }
@@ -42,6 +45,6 @@ const Component = ({
       />
     </svg>
   );
-};
+}
 
 export const SpinnerCircular = withSharedProps(Component);
