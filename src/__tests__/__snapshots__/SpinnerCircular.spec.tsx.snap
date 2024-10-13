@@ -1,79 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SpinnerCircular matches the snapshot 1`] = `
-<svg
-  fill="none"
-  style={
-    Object {
-      "color": "#fff",
-      "overflow": "visible",
-      "width": "100px",
-    }
-  }
-  viewBox="0 0 66 66"
->
-  <circle
-    cx="33"
-    cy="33"
+<div>
+  <svg
     fill="none"
-    r="28"
-    stroke="rgba(0,0,0,0.44)"
-    strokeWidth={2}
-  />
-  <circle
-    cx="33"
-    cy="33"
-    fill="none"
-    r="28"
-    stroke="currentColor"
-    strokeDasharray="1, 174"
-    strokeDashoffset="306"
-    strokeLinecap="round"
-    strokeWidth={2}
-    style={
-      Object {
-        "animation": "spinners-react-circular 14s linear infinite",
-      }
-    }
-  />
-</svg>
+    style="color: rgb(255, 255, 255); overflow: visible; width: 100px;"
+    viewBox="0 0 66 66"
+  >
+    <circle
+      cx="33"
+      cy="33"
+      fill="none"
+      r="28"
+      stroke="rgba(0,0,0,0.44)"
+      stroke-width="2"
+    />
+    <circle
+      cx="33"
+      cy="33"
+      fill="none"
+      r="28"
+      stroke="currentColor"
+      stroke-dasharray="1, 174"
+      stroke-dashoffset="306"
+      stroke-linecap="round"
+      stroke-width="2"
+      style="animation: spinners-react-circular 14s linear infinite;"
+    />
+  </svg>
+</div>
 `;
 
 exports[`SpinnerCircular matches the snapshot with default props 1`] = `
-<svg
-  fill="none"
-  style={
-    Object {
-      "color": "#38ad48",
-      "overflow": "visible",
-      "width": "50px",
-    }
-  }
-  viewBox="0 0 66 66"
->
-  <circle
-    cx="33"
-    cy="33"
+<div>
+  <svg
     fill="none"
-    r="28"
-    stroke="rgba(0,0,0,0.44)"
-    strokeWidth={4}
-  />
-  <circle
-    cx="33"
-    cy="33"
-    fill="none"
-    r="28"
-    stroke="currentColor"
-    strokeDasharray="1, 174"
-    strokeDashoffset="306"
-    strokeLinecap="round"
-    strokeWidth={4}
-    style={
-      Object {
-        "animation": "spinners-react-circular 1.4s linear infinite",
-      }
-    }
-  />
-</svg>
+    style="color: rgb(56, 173, 72); overflow: visible; width: 50px;"
+    viewBox="0 0 66 66"
+  >
+    <circle
+      cx="33"
+      cy="33"
+      fill="none"
+      r="28"
+      stroke="rgba(0,0,0,0.44)"
+      stroke-width="4"
+    />
+    <circle
+      cx="33"
+      cy="33"
+      fill="none"
+      r="28"
+      stroke="currentColor"
+      stroke-dasharray="1, 174"
+      stroke-dashoffset="306"
+      stroke-linecap="round"
+      stroke-width="4"
+      style="animation: spinners-react-circular 1.4s linear infinite;"
+    />
+  </svg>
+</div>
 `;

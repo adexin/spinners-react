@@ -6,13 +6,13 @@ import './SpinnerInfinity.css';
 
 export type SpinnerInfinityProps = SpinnersProps & SecondaryColorSpinnerProps;
 
-const Component = ({
+function Component({
   secondaryColor = secondaryColorDefaultProps.secondaryColor,
   speed = secondaryColorDefaultProps.speed,
   still = secondaryColorDefaultProps.still,
   thickness = secondaryColorDefaultProps.thickness,
   ...svgProps
-}: SecondaryColorSpinnerProps) => {
+}: SecondaryColorSpinnerProps) {
   const strokeWidth = 7 * (thickness / 100);
   const dashStyle: CSSProperties = !still
     ? { animation: `spinners-react-infinity ${140 / speed}s linear infinite` }
@@ -39,6 +39,6 @@ const Component = ({
       />
     </svg>
   );
-};
+}
 
 export const SpinnerInfinity = withSharedProps(Component);

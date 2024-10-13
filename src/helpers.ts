@@ -11,6 +11,8 @@ export const secondaryColorDefaultProps = {
   secondaryColor: 'rgba(0,0,0,0.44)' as CSSProperties['color'],
 };
 
-export type SpinnerProps = HTMLAttributes<SVGElement> & Partial<typeof defaultProps>;
+export type SpinnerProps = HTMLAttributes<SVGElement> &
+Partial<typeof defaultProps>;
 
-export type SecondaryColorSpinnerProps = SpinnerProps & Partial<typeof secondaryColorDefaultProps>;
+export type SecondaryColorSpinnerProps = SpinnerProps &
+Partial<typeof secondaryColorDefaultProps>;
