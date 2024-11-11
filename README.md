@@ -79,7 +79,7 @@ import { SpinnerCircular } from 'spinners-react/lib/esm/SpinnerCircular';
 // or CJS
 const { SpinnerCircular } = require('spinners-react/lib/cjs/SpinnerCircular');
 // or UMD
-const { SpinnerCircular } = require('spinners-react/lib/cjs/SpinnerCircular');
+const { SpinnerCircular } = require('spinners-react/lib/umd/SpinnerCircular');
 
 ```
 
