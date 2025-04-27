@@ -88,8 +88,8 @@ const { SpinnerCircular } = require('spinners-react/lib/umd/SpinnerCircular');
 <!doctype html>
 <html>
   <head>
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react@19/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@19/umd/react-dom.production.min.js"></script>
     <!-- to load a specific spinner -->
     <script src="https://unpkg.com/spinners-react/lib/umd/SpinnerCircular.min.js"></script>
     <!-- to load all spinners at once -->

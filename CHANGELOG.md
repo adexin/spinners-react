@@ -3,9 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-[unreleased]: https://github.com/adexin/spinners-react/compare/v1.0.10...HEAD
+[unreleased]: https://github.com/adexin/spinners-react/compare/v1.0.11...HEAD
+
+## [1.0.11]
+[1.0.11]: https://github.com/adexin/spinners-react/compare/v1.0.10...v1.0.11
 
 ### Changed
+- Updated react dependencies.
 - Fixed README umd import link.
 
 ## [1.0.10]
