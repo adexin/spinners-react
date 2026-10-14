@@ -13,6 +13,15 @@ const outputGlobals = {
   react: 'React',
   'react-dom': 'ReactDOM',
 };
+// The package is "type": "module", so Node would parse the cjs/umd builds as ESM
+// and find no exports; a nested package.json scopes those folders back to CommonJS.
+const commonjsScope = () => ({
+  name: 'commonjs-scope',
+  generateBundle() {
+    this.emitFile({ type: 'asset', fileName: 'package.json', source: '{ "type": "commonjs" }\n' });
+  },
+});
+
 const getPlugins = (declarationDir, isMinified) => [
   typescript({
     declaration: true,
@@ -101,7 +110,7 @@ export default (args) => glob(path.join('src', '*.tsx')).then((files) => {
         index: 'src/index.ts',
         ...inputs,
       },
-      plugins: getPlugins('lib/cjs'),
+      plugins: [...getPlugins('lib/cjs'), commonjsScope()],
       external: externals,
       output: [
         {
@@ -113,7 +122,7 @@ export default (args) => glob(path.join('src', '*.tsx')).then((files) => {
     },
     ...Object.keys(inputs).map((name) => ({
       input: inputs[name],
-      plugins: getPlugins('lib/umd'),
+      plugins: [...getPlugins('lib/umd'), commonjsScope()],
       external: externals,
       output: {
         file: `lib/umd/${name}.js`,
